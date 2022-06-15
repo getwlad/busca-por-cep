@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fcf2f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.endereco {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.pesquisa {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.pesquisa > input {
+  margin: 5px 10px;
+}
+h1 {
+  margin: 10px;
+  padding: 2px;
+  color: black;
+}
+label {
+  font-size: 1.2em;
+  margin-top: 14px;
+}
+input {
+  margin: 5px 0px;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 350px;
+  height: 40px;
+}
+#cep {
+  width: 75%;
+}
+#cep:focus {
+  background-color: #fcf0f0;
+}
+#search {
+  margin: 0px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+button {
+  align-self: center;
+  width: 20%;
+  height: 35px;
+  background-color: floralwhite;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: #e2e2e2;
+}
+
+.endereco,
+#uf,
+#localidade,
+#bairro,
+#logradouro,
+#complemento,
+#ddd,
+label {
+  display: none;
+}
